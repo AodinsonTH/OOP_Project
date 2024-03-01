@@ -26,7 +26,7 @@ st.markdown(
 
 # เพิ่มเนื้อหาอื่น ๆ ที่คุณต้องการในเว็บ Streamlit ต่อจากนี้
 st.header(":red[Happy Birthday to Thiyaporn]:heart: " ) 
-st.write("มีความสุขมากๆ ยิ่มเยอะๆแบบนี้ตลอดไปนะครับ :star2: :heart:")
+st.write("มีความสุขมากๆ ยิ้มเยอะๆแบบนี้ตลอดไปนะครับ :star2: :heart:")
 st.image('https://i.imgur.com/FKVPifE.jpeg')
 st.write("พี่รู้ไหม ว่ารอยยิ้มของพี่ ทำให้ผมมีความสุขมากแค่ไหน :star2: :heart:")
 st.image ('https://i.imgur.com/2gNcBRs.jpeg')
