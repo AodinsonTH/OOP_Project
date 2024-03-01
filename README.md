@@ -1,23 +1,15 @@
-# OOP_Project
+# getting started streamlit
 
-#Web01
-*id:66114540779
-*name: Sornsiri Phinyaphong
+# requiements.txt
+ pip install streamlit
 
-## technology:streamlit
+ "streamlit run main.py"
+ background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
 
-## เว็บไซต์โปรโททอะไรสักอย่าง
-
-
-****
-README.md
--application title
--author:
-  *id: ---
-  *name: first last
--technology: streamlit
--application descriptsion
-
--presentation: slide/canva linkk
-*video: link [public/ubu]
-****
+ # สร้าง DataFrame ของรถยนต์
+car_data = pd.DataFrame({
+    'ยี่ห้อ': ['Toyota', 'Honda', 'Nissan', 'Ford', 'Chevrolet'],
+    'รุ่น': ['Corolla', 'Civic', 'Altima', 'Focus', 'Malibu'],
+    'ราคา': [1000000, 950000, 900000, 850000, 880000],
+    'สี': ['White', 'Black', 'Silver', 'Blue', 'Red']
+})
