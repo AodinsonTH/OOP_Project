@@ -1,5 +1,5 @@
 import streamlit as st
-st.title (':red[สะดวกปาก.....?]')
+st.title (':red[ร้านอาหารสะดวกปาก.....?]')
 st.header ('บริการจัดส่งอาหารถึงที่')
 total_price = []
 
@@ -14,12 +14,11 @@ background-size: cover;
 }
 </style>
 """
-st.markdown(bg, unsafe_allow_html=True)         #กำหนด BG 
-
+st.markdown(bg, unsafe_allow_html=True)    
 def _Food():
     st.title("เมนูอาหาร")
 
-    # สร้างเมนูอาหาร
+    #เมนูอาหาร
     menu_food = {
         "ไม่รับอาหาร": 0,
         "ข้าวผัด": 50,
@@ -37,7 +36,8 @@ def _Food():
     st.image('https://th.bing.com/th/id/R.721010d77b1919648e5cb926662b0705?rik=YDbQdP3DbB%2boFQ&pid=ImgRaw&r=0')
     st.image('https://fit-d.com/uploads/food/ce53316bba21f1adcd2419d81d22e216.jpg')
     st.image('https://th.bing.com/th/id/OIP.v4mfLHQGRMfLaylH8B92hgHaEK?rs=1&pid=ImgDetMain')
-    # เลือกจำนวนแต่ละเมนู
+
+    # เลือกเมนู
     selected_item = st.selectbox("เลือกเมนู", options=list(menu_food.keys()))
     if selected_item:
         st.write(f"คุณเลือก {selected_item}")
@@ -56,8 +56,10 @@ if st.checkbox('เพิ่มไข่ต้ม') :
     total_price.append(10)
 if st.checkbox('เพิ่มไข่ลวกยางมะตูม') :
     total_price.append(10)
-if st.text_input('เขียนรายละเอียด') :
-    total_price.append(10)
+
+
+st.text_input('เขียนรายละเอียด') 
+    
 def _Drink():
     st.title("เมนูเครื่องดื่ม")
 
@@ -85,10 +87,8 @@ def _Drink():
 if __name__ == "__main__":
     _Drink()
 
+st.write(f'ราคารวม: {sum(total_price)}') 
 
-# st.write("ราคาอาหาร",food_price)
-# st.write ('ราคารวม', total_price)
 if st.button ('ยืนยันการสั่งอาหาร'):
     st.write('ขอบคุณที่ใช้บริการค่ะ')
     st.write('เราจะจัดส่งอาหารของท่านให้เร็วที่สุด')
-    st.write(f'ราคารวม: {sum(total_price)}') 
